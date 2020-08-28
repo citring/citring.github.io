@@ -159,7 +159,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/08/28/Hexo%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2020/08/28/Hexo%E6%A1%86%E6%9E%B6%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">Hexo框架的博客搭建</a>
         </h2>
 
         <div class="post-meta">
@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-28 14:24:12 / 修改时间：14:25:38" itemprop="dateCreated datePublished" datetime="2020-08-28T14:24:12+08:00">2020-08-28</time>
+              <time title="创建时间：2020-08-28 14:37:38 / 修改时间：15:06:53" itemprop="dateCreated datePublished" datetime="2020-08-28T14:37:38+08:00">2020-08-28</time>
             </span>
 
           
@@ -184,8 +184,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>#Hexo框架的博客搭建</p>
-<h2 id="准备环境：安装git、hexo框架"><a href="#准备环境：安装git、hexo框架" class="headerlink" title="准备环境：安装git、hexo框架"></a>准备环境：安装git、hexo框架</h2><p>一、下载git 官方地址为：<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+          <h1 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h1><h2 id="准备环境：安装git、hexo框架"><a href="#准备环境：安装git、hexo框架" class="headerlink" title="准备环境：安装git、hexo框架"></a>准备环境：安装git、hexo框架</h2><p>一、下载git 官方地址为：<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
 <p>根据自己的系统选择git的版本，跟随指引安装</p>
 <p>安装完成后 win+r  cmd  输入<code>git --version </code></p>
 <p><img src="../assets/image-20200828125812367.png" alt="image-20200828125812367"></p>
@@ -216,7 +215,20 @@
 <p>在你博客安装位置，创建文件夹blog，命令行进入blog，输入<code>hexo init</code></p>
 <p>安装完成后输入<code>hexo s</code> ，通过localhost:4000端口来对博客进行本地预览。</p>
 <p>五、博客的书写</p>
-<p>建议使用Typora等文件进行书写。</p>
+<p>建议使用Typora等文件进行书写，Typora地址 <a target="_blank" rel="noopener" href="https://www.typora.io/">https://www.typora.io/</a></p>
+<p>通过<code>hexo n &quot;文章名字&quot; </code> 来创建新的文章，建议通过hexo代码来创建文章，在通过Typora来书写博客， <code>hexo g</code> 来发表自己的文章。</p>
+<p><img src="../assets/image-20200828144051012.png" alt="image-20200828144051012"></p>
+<p>对Typora图片管理的设置可以使得博客上传之后图片不会出现问题。</p>
+<p>六、hexo博客的部署</p>
+<p>在github上部署自己的个人博客，创建新的仓库<img src="../assets/image-20200828145931496.png" alt="image-20200828145931496"></p>
+<p>仓库名字与你github帐号名字一致。</p>
+<p>安装hexo的git插件<code>cnpm install --save hexo-deployer-git</code></p>
+<p>修改blog目录下_config.yml文件</p>
+<p>打开_config.yml 拉到最底下</p>
+<p><img src="../assets/image-20200828150358167.png" alt="image-20200828150358167"></p>
+<p>修改成这个样子repo 写上你的github网址</p>
+<p>同时hexo博客语言的修改也是在这个配置文件中，language： 修改成你下载的主题适配的语言。</p>
+<p>做好以上配置 我们在命令行输入 <code>hexo d</code> 将本地博客上传到github，我们就可以通过github网址来访问了。</p>
 
       
     </div>
